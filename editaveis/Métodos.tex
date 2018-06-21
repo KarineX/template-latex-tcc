@@ -1,134 +1,169 @@
 \chapter[Materiais e métodos]{Materiais e Métodos}
 
-A análise da viabilidade do sistema foi feita de forma quantitativa por meio de estudo experimental e levantamento de dados em campo, bem como a utilização de software para simulação das reações ocorridas no gaseificador.
+A análise do sistema foi feita de forma quantitativa por meio de estudo experimental em que foi realizada a montagem de um aparato experimental e a coleta de dados deste experimento visando analisar o consumo do motor com três diferentes configurações, sendo elas: motor operando somente com gasolina, motor acoplado a um gaseificador operando a topo aberto e a topo fechado, bem como a análise energética do sistema dada pela energia térmica do gás de síntese que pode ser convertida em trabalho de eixo ou energia elétrica.
 
-	
 \section{Aparato experimental}
+Para a alimentação do motor com o gás de síntese proveniente da gaseificação do bagaço de cana, foi montado um aparato experimental composto por um reator, um sistema de resfriamento dos gases e um motor de combustão interna na configuração do gaseificador a topo aberto. A topo fechado, foi adicionado ao aparato um compressor a montante do reator.
 
-Para realização dos testes experimentais, foi montado um aparato experimental composto por um reator, um sistema de limpeza dos gases, um grupo moto-gerador e um banco de cargas resistivas para testes no gerador. 
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics{aparato_experimental}
-	\caption{Aparato experimental (Fonte: autoria própria).}
-	\label{aparato_experimental}
-\end{figure}
-
-
-O reator utilizado, visto na Figura \ref{foto_reator}, possui 120mm de diâmetro e 480mm de altura.
+O reator utilizado, visto na Figura \ref{foto_reator}, possui 125mm de diâmetro e 500mm de altura. Antes de sua utilização, foram realizadas soldas no seu corpo externo para reparo do material, que tinha fundido. Adicionou-se argamassa refratária na parte interna para evitar transferência de calor com o meio, reduzindo seu diâmetro interno de 150mm para 125mm. O isolamento térmico foi feito com lã de vidro e manta térmica envoltos por uma cinta térmica.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=9cm]{gaseificador_foto_3}
+	\subfloat[a]{
+		\includegraphics[width=5.5cm]{reator}
+	}
+	\quad %espaco separador
+	\subfloat[b]{
+		\includegraphics[width=5.5cm]{reator_cima}
+	}
 	\caption{Reator (Fonte: autoria própria).}
 	\label{foto_reator}
 \end{figure}
 
-Antes de sua utilização, foram realizadas soldas no seu corpo externo para reparo do material, que tinha fundido. Adicionou-se argamassa refratária na parte interna para evitar transferência de calor com o meio, reduzindo seu diâmetro de 150mm para 120mm. O isolamento térmico foi feito com lã de vidro e manta térmica envoltos por uma cinta térmica.
-
-Para trabahar em modo downdraft, um sistema de admissão de ar e extração de gases foi montado à jusante do reator baseando-se no efeito venturi. Neste sistema, que pode ser visto na Figura *, o ar é puxado por um 
-
-A alimentação da biomassa foi realizada manualmente pelo topo do reator.
-
-O sistema de limpeza foi composto por 
-
-Será utilizado um moto-gerador da Universidade de Brasília - Faculdade Gama movido a gasolina com potência de 1.200W. Uma foto do moto-gerador pode ser vista na Figura \ref{moto_gerador} e suas especificações técnicas podem ser vistas na Tabela \ref{tabela_motor}.
+Na saída do reator foi colocada uma mangueira que era resfriada em água à temperatura ambiente dentro de um galão de plástico. A água, além de resfriar o gás, condensou o alcatrão presente nele, este alcatrão se depositou nas paredes da própria mangueira. Este sistema e a mangueira com o alcatrão condensado podem ser vistos na Figura \ref{sistema_limpeza}.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=8cm]{moto_gerador}
-
-	\caption{Moto-gerador que será utilizado (Fonte: autoria própria).}
-	\label{moto_gerador}
+	\subfloat[a]{
+		\includegraphics[width=5cm]{sistema_limpeza}
+	}
+	\quad %espaco separador
+	\subfloat[b]{
+		\includegraphics[width=5cm]{alcatrao_condensado}
+	}
+	\caption{a) Resfriamento do gás e condensação do alcatrão. b) Alcatrão condensado. (Fonte: autoria própria).}
+	\label{sistema_limpeza}
 \end{figure}
 
-\begin{table}[h]
-	\centering
-	\caption{Especificações moto-gerador}
-	\begin{tabular}{|l|c|}
-		\hline
-		\textbf{Marca} & Toyama Power Products \\
-		\hline
-		\textbf{Potência Máxima} & 1.200 W \\
-		\hline
-		\textbf{Potência Nominal} & 1.050 W \\
-		\hline
-		\textbf{Frequência} & 60 Hz \\
-		\hline
-		\textbf{Voltagem} & 230 V \\
-		\hline
-		\textbf{Fase} & Monofásico \\
-		\hline
-		\textbf{Combustível} & Gasolina não aditivada \\
-		\hline
-		\textbf{Capacidade do tanque} & 5,0 L \\
-		\hline
-	\end{tabular}
-	\label{tabela_motor}
-\end{table}	
-
-
-O banco de carga resistiva foi montado para simular a carga no gerador, além de analisar o consumo de biomassa e o comportamento do sistema quanto a diferentes níveis de carga. O banco foi composto por 
-
-
-\section{Simulação da reação}
-
-A reação \ref{bagaço_reação} mostra a reação geral de gaseificação do bagaço de cana. Sua fórmula equivalente, C$_x$H$_y$O$_z$N$_w$S$_v$, é obtida através da análise elementar e, como o bagaço de cana é uma biomassa amplamente utilizada e estudada, foi utilizada análise elementar encontrada na literatura.
-
-\begin{equation} \label{bagaço_reação}
-C_xH_yO_zN_w + \alpha(O_2 + 3,6N_2) + \beta H_2O \rightarrow aCO_2 + bCO + cH_2 + dO_2 + eH_2 + fCH_4 + gN_2
-\end{equation}
-
-A reação \ref{bagaço_reação} e a razão de equivalência serão simulados no software ComGas visando obter um gás de síntese de qualidade com maiores percentuais de CO e H$_2$ e maior poder calorífico.
-
-\subsection{Software ComGas}
-
-O ComGas é um software de simulação de reações de combustão e gaseificação na condição de equilíbrio químico \cite{rendeiro2008}. Sua interface gráfica pode ser vista na Figura \ref{software_comgas}. Nele, é possível introduzir os dados de caracterização do combustível, sendo que alguns fazem parte da base de dados, e a razão de equivalência, bem como determinar se será realizada combustão ou gaseificação, gerando tabelas e gráficos com os resultados de fração molar e mássica dos produtos em função da razão de equivalência, assim como de propriedades do gás como seu poder calorífico.
+O fluxo de gás seguiu por outra mangueira até a entrada de ar do motor, que na Figura \ref{entrada_gas}, é a mangueira azul. O motor utilizado foi um motor de combustão interna de um Fiat Palio 1.0 8V.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width = 16cm]{software_comgas}
-	\caption{Interface gráfica do software Comgas v1.2 (Fonte:Software Comgas)}
-	\label{software_comgas}
+	\includegraphics[width = 5cm]{entrada_gas}
+	\caption{Entrada do gás de síntese no motor. (Fonte: autoria própria)}
+	\label{entrada_gas}
 \end{figure}
 
-\subsection{Determinação da Vazão de ar}
-Para determinar a massa de ar, e assim, a vazão de ar que deve ser inserida no gaseificador, deve-se determinar o valor da razão de equivalência ($\phi$), que é definida como a razão entre a relação ar-combustível (A/C) real e a relação ar-combustível estequiométrico, como mostra a equação \ref{eq:razao_equivalencia}. A relação ar-combustível é dada pela razão entre a massa de ar e a massa de combustível dada na equação \ref{A/C}, onde m\textsubscript{ar} é a massa de ar e m\textsubscript{b} é a massa de bagaço.
+Para que o reator trabalhasse em modo downdraft, o ar era puxado pelo vácuo do motor, dessa forma, causava-se uma depressão na saída do reator, fazendo com que o ar fosse puxado do topo, passasse pelo corpo deste servindo como agente oxidante das reações, e produzindo gás de síntese, que seguia o fluxo até o motor.
 
-Para processos de gaseificação, a razão de equivalência deve ser menor que 1, uma vez que a combustão deve ser incompleta. Geralmente esse valor varia entre 0,2 e 0,4 \cite{narvaez1996}.
- 
-\begin{equation}\label{eq:razao_equivalencia}
-\phi = \frac{A/C\textsubscript{real}}{A/C\textsubscript{estequiométrica}}
-\end{equation}
- 
-\begin{equation}\label{A/C}
-A/C = \frac{m\textsubscript{ar}}{m\textsubscript{b}}
-\end{equation}
+\section{Procedimento Experimental}
 
+Para preparar a biomassa para o experimento de gaseificação, cortou-se o bagaço de cana em pedaços, como mostra a Figura \ref{bagaco_cortado}, e este foi deixado secando ao sol por mais de 30 dias. Separou-se, então, os bagaços em diferentes sacolas, cada uma com 100g, que foram pesadas com uma balança digital portátil.
 
-Com o valor das frações molares e mássicas dos produtos obtidos em simulação no software ComGas e calculando a massa de biomassa estequiométrica pela fórmula equivalente, faz-se um balanço de massa da reação, representado na reação \ref{balanço_massa}, onde m\textsubscript{reagentes} é a massa de reagentes e m\textsubscript{produtos} é a massa de produtos, obtendo a massa de ar estequiométrica e, consequentemente, a relação A/C estequiométrica.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=6cm]{bagaco_cortado}
+	\caption{Biomassa preparada para gaseificação. (Fonte: autoria própria)}
+	\label{bagaco_cortado}
+\end{figure}
 
+O experimento iniciou com a coleta de dados do motor funcionando apenas com gasolina através do software **. Foram coletados dados da rotação do motor, o tempo de injeção, a posição da borboleta e a pressão do coletor, dentre outros dados fornecidos pelo software.
 
-\begin{equation}\label{balanço_massa}
-m\textsubscript{reagentes} = m\textsubscript{produtos}
-\end{equation}
+Após coletados esses dados, deu-se ínio ao processo de gaseificação no reator com a adição, primeiramente, de carvão para dar ignição até que se atingisse a temperatura de gaseificação e entrasse em regime permanente.
+A partir de então, adicionavam-se 100 gramas de bagaço de cana medindo a altura da coluna no reator ocupada por ele e o tempo levado até que todo o bagaço inserido fosse consumido e transformado em gás de síntese. A alimentação do bagaço de cana foi realizada manualmente pelo topo do reator e foi feita até que fossem coletados os dados do motor operando a duplo combustível.
 
-\begin{equation}\label{balanço_ar}
-m\textsubscript{b} + m\textsubscript{ar} = m\textsubscript{produtos}
-\end{equation}
+Depois de coletados os dados a topo aberto, adicionou-se 200g de biomassa, fechou-se o topo do reator pressurizando-o, e injetou-se ar com um compressor até que fossem coletados os dados do software e da vazão volumétrica do ar com um rotâmetro.
 
-De posse do valor da razão de equivalência também obtido em simulação, determina-se a relação A/C real. A massa do bagaço de cana será determinada experimentalmente, pesando-a em balança de acordo com o quanto é possível inserir no volume do reator. Calcula-se, então, o volume de ar necessário para gaseificar essa quantidade e o tempo levado para que seja consumida, obtendo a taxa de consumo da biomassa e do ar, podendo, assim, calcular a vazão de ar necessária pela equação \ref{vazao_ar}.
+\section{Consumo do motor}
 
-\begin{equation}
-A/C\textsubscript{real} = \frac{\dot{m}\textsubscript{ar}}{\dot{m}\textsubscript{b}}
+O cálculo do consumo de combustível do motor pode ser feito pela equação \ref{eq:consumo}.
+
+\begin{equation} \label{eq:consumo}
+	C = \dot{Q} * t\textsubscript{i} * N * {2 \pi*60} \qquad [L/h]
 \end{equation}
 
-\begin{equation}\label{vazao_ar}
-\dot{v}\textsubscript{ar} = \frac{\dot{m\textsubscript{ar}}}{\rho\textsubscript{ar}}
+Onde C é o consumo,
+$\dot{Q}$ é a vazão volumétrica do bico de injeção do motor,
+t\textsubscript{i} é o tempo de injeção e
+N é a rotação do motor.
+
+\section{Análise energética teórica}
+\subsection{Poder Calorífico do gás de síntese}
+
+De acordo com a metodologia de \cite{tiangco1986}, o poder calorífico do gás pode ser obtido através da equação \ref{PCI_Tiangco}.
+
+\begin{equation} \label{PCI_Tiangco}
+	PCI\textsubscript{gás} = 5,9417 - 8,2893*10\textsuperscript{-3} * \psi \qquad [MJ/Nm^3]
 \end{equation}
 
-\section{Levantamento de dados em campo}
+Onde $\psi$ é a taxa específica de processamento de um reator, que pode ser obtida pela equação \ref{taxa_reator}, e está compreendida entre os valores de 100 a 400 kg/m$^2$h.
 
-Será realizado levantamento de dados dos equipamentos elétricos com as respectivas potências e da quantidade de bagaço gerada em um pequeno estabelecimento que comercialize caldo de cana para analisar se o bagaço mensal gerado é capaz de produzir a potência máxima do gerador, avaliando a economia que será gerada ao estabelecimento.
+\begin{equation} \label{taxa_reator}
+	\psi = \frac{\dot{m}\textsubscript{biomassa}}{A\textsubscript{g}} \qquad [\frac{kg}{m^2*h}]
+\end{equation}
+
+Onde $\dot{m}$\textsubscript{biomassa} é a vazão da biomassa, que pode ser obtida pela equação \ref{vazao_biomassa_PCI} e A\textsubscript{g} é a área da seção transversal do gaseificador.
+
+\begin{equation} \label{vazao_biomassa_PCI}
+\dot{m}\textsubscript{biomassa} = \frac{A\textsubscript{g} * h * \rho\textsubscript{ap}}{t} \qquad [kg/h]
+\end{equation}
+
+Onde
+h é a altura do leito consumido,
+$\rho$\textsubscript{ap} é a massa específica aparente do bagaço de cana medida com a massa de bagaço consumida pelo volume ocupado no reator e
+t é o tempo de consumo da biomassa.
+
+\subsection{Vazão do gás de síntese}
+
+Para determinação da vazão do gás de síntese, faz-se um balanço de energia, de acordo com a equação \ref{balanco_massa}.
+
+\begin{equation}\label{balanco_massa}
+	\dot{Q}\textsubscript{bagaço} + \dot{Q}\textsubscript{ar} = \dot{Q}\textsubscript{syngas}\qquad [m^3/h]
+\end{equation}
+
+onde $\dot{Q}$\textsubscript{bagaço} pode ser dado pela vazão mássica do bagaço vezes sua massa específica aparente.
+
+\begin{equation} \label{qdot_bagaco}
+	\dot{Q}\textsubscript{bagaço} = \dot{m}\textsubscript{bagaço} * \rho\textsubscript{ap} \qquad [m^3/h]
+\end{equation}
+
+\subsection{Vazão mássica do bagaço de cana}
+
+A vazão mássica do bagaço é determinada pela massa de biomassa inserida pelo tempo que foi consumida e pode ser calculada pela equação \ref{vazao_bagaco}.
+
+\begin{equation} \label{vazao_bagaco}
+\dot{m}\textsubscript{bagaço} = \frac{m\textsubscript{bagaço}}{t} \qquad [m/s]
+\end{equation}
+
+\subsection{Potência térmica}
+
+A potência do gás pode ser calculado pela equação \ref{consumo energetico}, que será caluclada com o PCI da metodologia de Tiangco.
+
+\begin{equation} \label{consumo_energetico}
+\dot{E} = \dot{Q} * PCI   \quad\quad  [J/s]
+\end{equation}
+
+Portanto, a equação \ref{potencia_termica} dá a potência térmica do gás de síntese do bagaço, que pode ser transformado em trabalho de eixo.
+
+\begin{equation} \label{potencia_termica}
+P\textsubscript{t} = \dot{Q}\textsubscript{syngas} * PCI\textsubscript{syngas} \quad\quad  [W]
+\end{equation}
+
+\subsection{Eficiência}
+
+A eficiência energética de um motor a combustão leva em conta as perdas na conversão da energia mecânica de expansão dos gases nos cilindros, dada pela eficiência mecânica $\eta$\textsubscript{m}, e da conversão da energia térmica do combustível em trabalho mecânico, dada pela eficiência térmica $\eta$\textsubscript{t}. A eficiência total para um motor a combustão pode ser calculada pela equação \ref{eficiencia_motor}.
+
+\begin{equation} \label{eficiencia_motor}
+\eta\textsubscript{motor} = \eta\textsubscript{m} * \eta\textsubscript{t}
+\end{equation}
+
+Para um moto-gerador, além das eficiências supracitadas, consideram-se as perdas na conversão da energia mecânica em energia elétrica no gerador, dada pela eficiência do gerador $\eta$\textsubscript{g}. A eficiência total para um moto-gerador pode ser calculada pela equação \ref{eficiencia_gerador}
+
+\begin{equation} \label{eficiencia_gerador}
+\eta\textsubscript{moto-gerador} = \eta\textsubscript{m} * \eta\textsubscript{t} * \eta\textsubscript{g}
+\end{equation}
+
+
+\subsection{Potência de eixo e Potência elétrica}
+
+A eficiência da conversão energética de uma máquina pode ser dada pela razão da potência ou energia que foi gerada sobre a potência ou energia de entrada. Portanto, para um motor e um moto-gerador, as potência de eixo e elétrica podem ser calculadas pelas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, respectivamente.
+
+\begin{equation} \label{potencia_eixo}
+P\textsubscript{w} = P\textsubscript{t} * \eta\textsubscript{motor} \qquad [W]
+\end{equation}
+
+\begin{equation} \label{potencia_eletrica}
+P\textsubscript{e} = P\textsubscript{t} * \eta\textsubscript{moto-gerador} \qquad [W]
+\end{equation}
 
 
