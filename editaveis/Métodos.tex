@@ -10,11 +10,11 @@ O reator utilizado, visto na Figura \ref{foto_reator}, possui 125mm de diâmetro
 \begin{figure}[!htb]
 	\centering
 	\subfloat[a]{
-		\includegraphics[width=5.5cm]{reator}
+		\includegraphics[width=5.5cm]{Figuras/reator}
 	}
 	\quad %espaco separador
 	\subfloat[b]{
-		\includegraphics[width=5.5cm]{reator_cima}
+		\includegraphics[width=5.5cm]{Figuras/reator_cima}
 	}
 	\caption{Reator (Fonte: autoria própria).}
 	\label{foto_reator}
@@ -25,11 +25,11 @@ Na saída do reator foi colocada uma mangueira que era resfriada em água à tem
 \begin{figure}[!htb]
 	\centering
 	\subfloat[a]{
-		\includegraphics[width=5cm]{sistema_limpeza}
+		\includegraphics[width=5cm]{Figuras/sistema_limpeza}
 	}
 	\quad %espaco separador
 	\subfloat[b]{
-		\includegraphics[width=5cm]{alcatrao_condensado}
+		\includegraphics[width=5cm]{Figuras/alcatrao_condensado}
 	}
 	\caption{a) Resfriamento do gás e condensação do alcatrão. b) Alcatrão condensado. (Fonte: autoria própria).}
 	\label{sistema_limpeza}
@@ -39,7 +39,7 @@ O fluxo de gás seguiu por outra mangueira até a entrada de ar do motor, que na
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width = 5cm]{entrada_gas}
+	\includegraphics[width = 5cm]{Figuras/entrada_gas}
 	\caption{Entrada do gás de síntese no motor. (Fonte: autoria própria)}
 	\label{entrada_gas}
 \end{figure}
@@ -52,7 +52,7 @@ Para preparar a biomassa para o experimento de gaseificação, cortou-se o baga�
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=6cm]{bagaco_cortado}
+	\includegraphics[width=6cm]{Figuras/bagaco_cortado}
 	\caption{Biomassa preparada para gaseificação. (Fonte: autoria própria)}
 	\label{bagaco_cortado}
 \end{figure}
@@ -95,11 +95,11 @@ Onde $\psi$ é a taxa específica de processamento de um reator, que pode ser ob
 Onde $\dot{m}$\textsubscript{biomassa} é a vazão da biomassa, que pode ser obtida pela equação \ref{vazao_biomassa_PCI} e A\textsubscript{g} é a área da seção transversal do gaseificador.
 
 \begin{equation} \label{vazao_biomassa_PCI}
-\dot{m}\textsubscript{biomassa} = \frac{A\textsubscript{g} * h * \rho\textsubscript{ap}}{t} \qquad [kg/h]
+\dot{m}\textsubscript{biomassa} = \frac{A\textsubscript{g} * h_b * \rho\textsubscript{ap}}{t} \qquad [kg/h]
 \end{equation}
 
 Onde
-h é a altura do leito consumido,
+h$_b$ é a altura do leito consumido,
 $\rho$\textsubscript{ap} é a massa específica aparente do bagaço de cana medida com a massa de bagaço consumida pelo volume ocupado no reator e
 t é o tempo de consumo da biomassa.
 
@@ -141,16 +141,17 @@ P\textsubscript{t} = \dot{Q}\textsubscript{syngas} * PCI\textsubscript{syngas} \
 
 \subsection{Eficiência}
 
-A eficiência energética de um motor a combustão leva em conta as perdas na conversão da energia mecânica de expansão dos gases nos cilindros, dada pela eficiência mecânica $\eta$\textsubscript{m}, e da conversão da energia térmica do combustível em trabalho mecânico, dada pela eficiência térmica $\eta$\textsubscript{t}. A eficiência total para um motor a combustão pode ser calculada pela equação \ref{eficiencia_motor}.
+A eficiência energética de um motor a combustão leva em conta diversas perdas na conversão da energia, tais como a transferência de calor para as paredes da câmara,
+a energia mecânica de expansão dos gases nos cilindros, a conversão da energia térmica do combustível em trabalho mecânico, dentre outros. A eficiência total para um motor a combustão, portanto, pode ser calculada pela equação \ref{eficiencia_motor}, onde $\eta$\textsubscript{c} é a eficiência de combustão, $\eta$\textsubscript{a} é a eficiência adiabática, $\eta$\textsubscript{t} é a eficiência térmica, $\eta$\textsubscript{p} é a eficiência de propriedade dos fluidos, $\eta$\textsubscript{i} é a eficiência inerente, e$_b$ é a eficiência de bombagem e $\eta$\textsubscript{m} é a eficiência mecânica \cite{martins2006}.
 
 \begin{equation} \label{eficiencia_motor}
-\eta\textsubscript{motor} = \eta\textsubscript{m} * \eta\textsubscript{t}
+\eta\textsubscript{motor} = \eta\textsubscript{c} * \eta\textsubscript{a} * \eta\textsubscript{t} * \eta\textsubscript{p} * \eta\textsubscript{i} * e_b \eta\textsubscript{m} 
 \end{equation}
 
 Para um moto-gerador, além das eficiências supracitadas, consideram-se as perdas na conversão da energia mecânica em energia elétrica no gerador, dada pela eficiência do gerador $\eta$\textsubscript{g}. A eficiência total para um moto-gerador pode ser calculada pela equação \ref{eficiencia_gerador}
 
 \begin{equation} \label{eficiencia_gerador}
-\eta\textsubscript{moto-gerador} = \eta\textsubscript{m} * \eta\textsubscript{t} * \eta\textsubscript{g}
+\eta\textsubscript{moto-gerador} = \eta\textsubscript{motor} * \eta\textsubscript{g}
 \end{equation}
 
 
