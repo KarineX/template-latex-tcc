@@ -1,6 +1,6 @@
 \chapter[Materiais e métodos]{Materiais e Métodos}
 
-A análise do sistema foi feita de forma quantitativa por meio de estudo experimental em que foi realizada a montagem de um aparato experimental e a coleta de dados deste experimento visando analisar o consumo do motor com três diferentes configurações, sendo elas: motor operando somente com gasolina, motor acoplado a um gaseificador operando a topo aberto e a topo fechado, bem como a análise energética do sistema dada pela energia térmica do gás de síntese que pode ser convertida em trabalho de eixo ou energia elétrica.
+A análise do sistema foi feita de forma quantitativa por meio de estudo experimental, em que foi realizada a montagem de um aparato experimental e a coleta de dados deste experimento visando analisar o consumo do motor com três diferentes configurações, sendo elas: motor operando somente com gasolina, motor acoplado a um gaseificador operando a topo aberto e a topo fechado, bem como a análise energética do sistema dada pela energia térmica do gás de síntese que pode ser convertida em trabalho de eixo ou energia elétrica, incluindo o levantamento de dados em campo.
 
 \section{Aparato experimental}
 Para a alimentação do motor com o gás de síntese proveniente da gaseificação do bagaço de cana, foi montado um aparato experimental composto por um reator, um sistema de resfriamento dos gases e um motor de combustão interna na configuração do gaseificador a topo aberto. A topo fechado, foi adicionado ao aparato um compressor a montante do reator.
@@ -141,11 +141,10 @@ P\textsubscript{t} = \dot{Q}\textsubscript{syngas} * PCI\textsubscript{syngas} \
 
 \subsection{Eficiência}
 
-A eficiência energética de um motor a combustão leva em conta diversas perdas na conversão da energia, tais como a transferência de calor para as paredes da câmara,
-a energia mecânica de expansão dos gases nos cilindros, a conversão da energia térmica do combustível em trabalho mecânico, dentre outros. A eficiência total para um motor a combustão, portanto, pode ser calculada pela equação \ref{eficiencia_motor}, onde $\eta$\textsubscript{c} é a eficiência de combustão, $\eta$\textsubscript{a} é a eficiência adiabática, $\eta$\textsubscript{t} é a eficiência térmica, $\eta$\textsubscript{p} é a eficiência de propriedade dos fluidos, $\eta$\textsubscript{i} é a eficiência inerente, e$_b$ é a eficiência de bombagem e $\eta$\textsubscript{m} é a eficiência mecânica \cite{martins2006}.
+A eficiência energética de um motor a combustão leva em conta diversas perdas na conversão da energia, tais como a conversão da energia do combustível em energia térmica e desta em trabalho mecânico . A eficiência total para um motor a combustão, portanto, pode ser calculada pela equação \ref{eficiencia_motor}, onde $\eta$\textsubscript{t} é a eficiência térmica e $\eta$\textsubscript{m} é a eficiência mecânica \cite{brunetti2012}.
 
 \begin{equation} \label{eficiencia_motor}
-\eta\textsubscript{motor} = \eta\textsubscript{c} * \eta\textsubscript{a} * \eta\textsubscript{t} * \eta\textsubscript{p} * \eta\textsubscript{i} * e_b \eta\textsubscript{m} 
+\eta\textsubscript{motor} = \eta\textsubscript{t} * \eta\textsubscript{m} 
 \end{equation}
 
 Para um moto-gerador, além das eficiências supracitadas, consideram-se as perdas na conversão da energia mecânica em energia elétrica no gerador, dada pela eficiência do gerador $\eta$\textsubscript{g}. A eficiência total para um moto-gerador pode ser calculada pela equação \ref{eficiencia_gerador}
@@ -157,7 +156,7 @@ Para um moto-gerador, além das eficiências supracitadas, consideram-se as perd
 
 \subsection{Potência de eixo e Potência elétrica}
 
-A eficiência da conversão energética de uma máquina pode ser dada pela razão da potência ou energia que foi gerada sobre a potência ou energia de entrada. Portanto, para um motor e um moto-gerador, as potência de eixo e elétrica podem ser calculadas pelas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, respectivamente.
+A eficiência da conversão energética de uma máquina pode ser dada pela razão da potência ou energia que foi gerada sobre a potência ou energia de entrada. Portanto, para um motor e um moto-gerador, as potência de eixo e elétrica podem ser calculadas pelas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, respectivamente \cite{brunetti2012}.
 
 \begin{equation} \label{potencia_eixo}
 P\textsubscript{w} = P\textsubscript{t} * \eta\textsubscript{motor} \qquad [W]

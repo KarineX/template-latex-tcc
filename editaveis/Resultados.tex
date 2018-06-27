@@ -64,12 +64,12 @@ A figura \ref{grafico_consumo} mostra um gráfico representando o consumo do mot
 	\label{grafico_consumo}
 \end{figure}
 
-Trabalhando a duplo combustível com topo aberto, o abatimento no consumo de gasolina  com a adição do gás de síntese é mínima. Ao pressurizar o sistema trabalhando com o topo fechado, essa diferença de consumo se mostra mais evidente, chegando a uma redução de 14,4\%.
+Trabalhando a duplo combustível com topo aberto, o abatimento no consumo de gasolina  com a adição do gás de síntese foi de 0,13\%. Ao pressurizar o sistema trabalhando com o topo fechado, essa diferença de consumo se mostra mais evidente, chegando a uma redução de 14,4\%.
 
 Esse resultado insatisfatório do gás de síntese no consumo do motor pode ser explicado pela perda de carga na mangueira de entrada de gases, uma vez que esta apresentava diâmetro muito pequeno e, de acordo com a fórmula de Darcy-Weibasch, a perda de carga e o diâmetro da tubulação são inversamente proporcionais, ou seja, quanto menor o diâmetro, maior a perda de carga.
 
 \begin{equation} \label{darcy-weibasch}
- h\textsubscript{f} = f\textsubscript{d}\frac{L}{D}\frac{\rho V^2}{2}
+ h\textsubscript{f} = f\textsubscript{d}\frac{L}{D}\frac{V^2}{2g}
 \end{equation}
 
 Onde f\textsubscript{D} é o coeficiente de atrito, L é o comprimento, D é o diâmetro, $\rho$ é massa específica e V é a velocidade.
@@ -113,16 +113,17 @@ A tabela \ref{tabela_resultados_2} mostra o resultado dos cálculos realizados c
 \label{tabela_resultados_2}
 \end{table}	
 
-Com base nas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, traça-se um gráfico com as potências de eixo e potência elétrica que podem ser geradas em função da potência térmica do syngas, assumindo eficiências entre 10\% e 90\% para $\eta$\textsubscript{motor} e 90\% para $\eta$\textsubscript{g}.
+Segundo \cite{brunetti2012}, a máxima eficiência térmica de um motor de combustão interna é a eficiência do ciclo de Carnot para as condições máximas e mínimas de temperatura neste tipo de motor, resultando numa eficiência máxima de 57,2\%.
+Com base nas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, traça-se um gráfico com as potências de eixo e potência elétrica que podem ser geradas em função da eficiência e da potência térmica do syngas, assumindo eficiências entre 10\% e 60\% para $\eta$\textsubscript{motor} e 90\% para $\eta$\textsubscript{g}.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=13.5cm]{Figuras/grafico_potencia_eficiencia}
+	\includegraphics[width=14cm]{Figuras/grafico_potencia_eficiencia_2}
 	\caption{Gráfico das potências de eixo e elétrica.}
 	\label{grafico_potencia_eficiencia}
 \end{figure}
 
-Segundo \cite{brunetti2012}, a máxima eficiência térmica de um motor de combustão interna é a eficiência do ciclo de Carnot para as condições máximas e mínimas de temperatura neste tipo de motor, resultando numa eficiência máxima de 57,2\%. Um MCI deve ter eficiência térmica abaixo deste valor.
+
 
 Portanto, um motor a combustão genérico com eficiência de até 57\%, trabalhando com gás de síntese do bagaço de cana com uma potência térmica de 1.724W, sem condiserar as demais perdas do sistema, seria capaz de movimentar uma moenda de cana de até 1,3cv acoplada ao seu eixo. Acoplando um gerador, o conjunto moto-gerador supriria um motor elétrico de até 1,2cv.
 
@@ -145,17 +146,123 @@ Na tabela \ref{tabela_moendas}, seguem as especificações de diferentes modelos
 	B-722 Turbo & 1,2 - 2,0 & 3,5 \\
 	M-700 & 1 & - \\
 	B-728 & 1/2 & - \\
-	B-730 & 5 a 7,5 & 8 a 12 \\
 	B-723 & 1/2 - 1,0 & - \\
+	B-730 & 5 a 7,5 & 8 a 12 \\
 	\hline
 	\end{tabular}
 	\label{tabela_moendas}
 \end{table}	
 
-De acordo com a tabela \ref{tabela_moendas}, para esses modelos de moenda, seria necessário um motor a combustão com potência de eixo mínima de 3,5cv. Portanto, um motor a combustão necessitaria trabalhar a duplo combustível para suprir a demanda de potência de tais moendas, uma vez que a energia do gás de síntese sozinho não é capaz de fornecer potência suficiente, de acordo com os cálculos teóricos.
+Para esses modelos de moenda, seria necessário um motor a combustão com potência de eixo mínima de 3,5cv. Portanto, qualquer motor a combustão necessitaria trabalhar a duplo combustível para suprir a demanda de potência de tais moendas, uma vez que a energia do gás de síntese sozinho não é capaz de fornecer potência suficiente.
 
-O motor a combustão da Fiat que foi acoplado ao reator neste experimento é capaz de fornecer \textcolor{red}{XW} de potência de eixo trabalhando a duplo combustível com o gaseificador a topo fechado, de acordo com a equação \textcolor{red}{equação}. Portanto, ele tem condições de fornecer a potência de eixo demandada pela moenda trabalhando a duplo combustível, porém, devem ser feitos ajustes na configuração do aparato experimental para que seja diminuída a perda de carga do sistema e possa haver participação significativa do gás de síntese na conversão da energia, uma vez que o objetivo é o incentivo ao uso da biomassa como fonte energética.
+Um gerador acoplado ao motor seria capaz de suprir a demanda de potência de motores elétricos de sete das onze moendas da tabela \ref{tabela_moendas}, as demais necessitariam também que o motor trabalhasse a duplo combustível. Para moendas pequenas que demandam potência do motor elétrico de 1/2 cv, seria necessário um moto-gerador com eficiência mínima de 23,5\%, para aqueles de 1cv, o mínimo seria de 47,2\%.
 
-Um moto-gerador com uma eficiência de 70\%, ou superior, seria capaz de suprir a potência de um motor elétrico de 1,5cv trabalhando somente com gás de sítnese, sem considerar perdas. Para as moendas que demandam valores de 2cv e acima, tal moto-gerador necessitaria trabalhar a duplo combustível. Para moendas pequenas que demandam potência do motor elétrico de 1/2 cv, seria necessário um moto-gerador com eficiência mínima de 23,5\%.
+A partir dos dados coletados, pôde-se calcular a potência de eixo que pode ser fornecida pelo motor a combustão utilizado neste experimento. Considerou-se para os cáluclos os dados de gasolina quando o motor estava operando a duplo combustível com topo fechado. Uma vez que não há dados suficientes para avaliar a potência que pode ser gerada com o gás de síntese que de fato entrou no motor, considerou-se, para o syngas, os resultados teóricos calculados e expostos na tabela \ref{tabela_resultados}. Na tabela \ref{tabela_potencia_motor_fiat}, vê-se o resultado da potência de eixo do motor com tais dados.
 
-		
+\begin{table}[h]
+	\centering
+	\caption{Resultados do motor utilizado}
+	\begin{tabular}{|l|c|}
+		\hline
+		\rowcolor{lightgray} Variável & Valor \\
+		\hline
+		Consumo de gasolina médio & 0,696 L/h \\
+		Massa específica gasolina & 720 kg/m$^3$ \\
+		Vazão mássica de gasolina & 0,501 kg/h \\
+		Poder Calorífico Inferior gasolina & 43 MJ/kg \\
+		Potência térmica gasolina & 5,985 kW ou 8 cv\\
+		Eficiência máxima de um MCI & 57\% \\
+		 Potência de eixo gasolina & 3,41 kW ou 4,6 cv \\
+		 Potência de eixo syngas & 982,68W ou 1,3 cv \\
+		 Potência de eixo total & 4,39kW ou 6 cv \\
+		\hline
+	\end{tabular}
+	\label{tabela_potencia_motor_fiat}
+\end{table}	
+
+
+Trabalhando a duplo combustível, somente a parcela de gasolina já é capaz de fornecer potência necessária para movimentar as moendas de cana da tabela \ref{tabela_moendas}, exceto a de modelo B-730. 
+Ao acoplar um gerador a esse motor, a potência fornecida ao motor elétrico seria de 5,4 cv, considerando os dois combustíveis, o que também supriria a demanda das moendas da tabela.
+
+\section{Análise Financeira}
+
+A análise financeira será realizada através de uma análise teórica em que um gerador de energia elétrica com eficiência de 90\% seria acoplado ao motor utilizado no experimento e injetaria energia elétrica na rede de distribuição.
+
+Fez-se levantamento de dados de uma pastelaria situada no setor central da cidade do Gama, DF. Foi anotado quais eram os equipamentos elétricos utilizados no estabelecimento e suas respectivas especificações técnicas, bem como o tempo que ficam ligados, esses resultados encontram-se na tabela \ref{dados_pastelaria}. A pastelaria funciona das 8h às 17hs e gera aproximadamente 15kg de bagaço por dia.
+
+\begin{table}[h]
+	\centering
+	\caption{Dados dos equipamentos elétricos da pastelaria.}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor{lightgray} Quantidade & Equipamento & Potência (W) & Horas (h) & Consumo mensal \\
+		\rowcolor{lightgray}& & & & (kWh/mês) \\
+		\hline
+		1 & Moenda de Cana & 735 W & 9 & 158,8 \\
+		1 & Fritadeira elétrica & 2500 & 9 & 540 \\
+		2 & Freezer & 500 & 9 & 216 \\
+		1 & Geladeira & 300 & 9 & 64,8\\
+		1 & Cilindro de massa & 735 & 9 & 158,8\\
+		1 & Estufa para salgados & 200 & 9 & 43,2\\
+		1 & Microondas & 1000 & 2 & 48 \\
+		\hline
+		\rowcolor{lightgray}\multicolumn{4}{|r|}{\textbf{Consumo mensal total}} & \textbf{1.230 kWh/mês} \\
+		\hline
+	\end{tabular}
+	\label{dados_pastelaria}
+\end{table}	
+
+Segundo site da ANP, o preço da gasolina para o estado do Distrito Federal no mês de junho é de R\$ 4,40, como pode ser visto no Anexo III. Segundo a CEB, a tarifa de energia para o grupo A referente aos consumidores comerciais em bandeiras verde e vermelha são, R\$ 0,53/kWh e R\$ 0,75/kWh, respectivamente, como pode ser visto nos Anexos I e II. Portanto, os custos mensais da pastelaria com energia elétrica antes e após a inserção do sistema de gaseificação proposto podem ser vistos na tabela \ref{custos_finais}.
+
+A energia elétrica mensal produzida pelo sistema de gaseificação proposto é de 854kWh/mês, segundo cálculo resultante da equação abaixo.
+
+\begin{equation}
+Energia produzida = Potência de eixo total * \eta\textsubscript{g} * horas mensais
+\end{equation}
+
+
+\begin{equation}
+Ep = 4,39kW * 0,9 * 216h/mês = 854kWh/mês
+\end{equation}
+
+
+
+
+\begin{table}[h]
+	\centering
+	\caption{Custos de energia elétrica}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Consumo de gasolina mensal & Preço da gasolina & Custo mensal &\\
+		& & da gasolina & \\
+		150L/mês & R\$ 4,40/L & R\$ 660,00 &\\
+		\hline
+		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\hline
+		Energia elétrica consumida & Tarifa Bandeira Verde & Custo Mensal & \\
+		sem sistema de gaseificação & & Bandeira Verde & \\
+		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh & R\$ 651,90 & \\
+		\cline{2-3}
+		& Tarifa Bandeira Vermelha & Custo Mensal & \\
+		& & Bandeira Vermelha & \\
+		& R\$ 0,75/kWh & R\$ 922,50 & \\
+		\hline
+		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\hline
+		Energia elétrica consumida & Tarifa bandeira verde & Custo Mensal & Custo Mensal \\
+		com sistema de gaseificação & & Bandeira Verde & Total\\
+		\multirow{4}{*}{376 kWh/mês} & R\$ 0,53/kWh & R\$ 199,28 & R\$ 859,28\\
+		\cline{2-4}
+		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
+		& & Bandeira Vermelha &  Total \\
+		& R\$ 0,75/kWh & R\$ 282,00 & R\$ 942,00\\
+		\hline
+		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\hline
+	\end{tabular}
+	\label{custos_finais}
+\end{table}	
+
+O custo mensal total de energia elétrica consumida com sistema de gaseificação é a soma do custo da energia elétrica distribuída pela CEB mais o custo mensal da gasolina utilizada no motor a combustão.
+
+Percebe-se que, ao introduzir o sistema de gaseificação, o custo mensal aumenta 24,1\% em bandeira verde e 2,97\% em bandeira vermelha. Este aumento se deve ao alto preço por litro da gasolina. O sistema de gaseificação somente seria viável economicamente se o preço por litro da gasolina for de no máximo R\$ 3/L, em bandeira verde, e no máximo de R\$ 4,27/L, em bandeira vermelha.
