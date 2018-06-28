@@ -189,7 +189,7 @@ Ao acoplar um gerador a esse motor, a potência fornecida ao motor elétrico ser
 
 A análise financeira será realizada através de uma análise teórica em que um gerador de energia elétrica com eficiência de 90\% seria acoplado ao motor utilizado no experimento e injetaria energia elétrica na rede de distribuição.
 
-Fez-se levantamento de dados de uma pastelaria situada no setor central da cidade do Gama, DF. Foi anotado quais eram os equipamentos elétricos utilizados no estabelecimento e suas respectivas especificações técnicas, bem como o tempo que ficam ligados, esses resultados encontram-se na tabela \ref{dados_pastelaria}. A pastelaria funciona das 8h às 17hs e gera aproximadamente 15kg de bagaço por dia.
+Fez-se levantamento de dados de uma pastelaria situada no setor central da cidade do Gama, DF. Foi anotado quais eram os equipamentos elétricos utilizados no estabelecimento e suas respectivas especificações técnicas, bem como o tempo que ficam ligados, esses resultados encontram-se na tabela \ref{dados_pastelaria}. A pastelaria funciona das 8h às 17hs e gera aproximadamente 15kg de bagaço por dia, a moenda utilizada no estabelecimento é o modelo CanaShop 140
 
 \begin{table}[h]
 	\centering
@@ -239,22 +239,26 @@ A energia elétrica mensal produzida pelo sistema de gaseificação proposto é 
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
 		\hline
-		Energia elétrica consumida & Tarifa Bandeira Verde & Custo Mensal & Custo Mensal\\
-		sem sistema de gaseificação & & Bandeira Verde & Total\\
-		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh &  R\$ 651,90 & \cellcolor{lightgray} R\$ 651,90 \\
+		Energia elétrica consumida & \multicolumn{2}{c|}{Bandeira Verde}  & Custo Mensal\\
 		\cline{2-3}
-		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
-		& & Bandeira Vermelha & Total\\
+		sem sistema de gaseificação &  Tarifa & Custo Mensal & Total\\
+		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh &  R\$ 651,90 & \cellcolor{lightgray} R\$ 651,90 \\
+		\cline{2-4}
+		& \multicolumn{2}{c|}{Bandeira Vermelha}  & Custo Mensal\\
+		\cline{2-3}
+		& Tarifa  & Custo Mensal & Total\\
 		& R\$ 0,75/kWh &  R\$ 922,50 & \cellcolor{lightgray} R\$ 922,50 \\
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
 		\hline
-		Energia elétrica consumida & Tarifa bandeira verde & Custo Mensal & Custo Mensal \\
-		com sistema de gaseificação & & Bandeira Verde & Total\\
+		Energia elétrica consumida & \multicolumn{2}{c|}{Bandeira Verde}  & Custo Mensal \\
+		\cline{2-3}
+		com sistema de gaseificação & Tarifa  & Custo Mensal & Total\\
 		\multirow{4}{*}{376 kWh/mês} & R\$ 0,53/kWh & R\$ 199,28 & \cellcolor{lightgray} R\$ 859,28\\
 		\cline{2-4}
-		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
-		& & Bandeira Vermelha &  Total \\
+		& \multicolumn{2}{c|}{Bandeira Vermelha}  & Custo Mensal\\
+		\cline{2-3}
+		& Tarifa  & Custo Mensal &  Total \\
 		& R\$ 0,75/kWh & R\$ 282,00 & \cellcolor{lightgray}R\$ 942,00\\
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
@@ -267,7 +271,7 @@ O custo mensal total de energia elétrica consumida com sistema de gaseificaçã
 
 Ao introduzir o sistema de gaseificação, o custo mensal aumenta 24,1\% em bandeira verde e 2,97\% em bandeira vermelha. Este aumento se deve ao alto preço por litro da gasolina, uma vez que esta fonte energética está sendo responsável por 76,8\% do custo total mensal em bandeira verde e 70\% em bandeira vermelha.
 
-Para que o sistema de gaseificação se torne viável economicamente, o preço por litro da gasolina deve ser, no máximo, R\$ 3/L em bandeira verde e R\$ 4,27/L em bandeira vermelha. Mantendo-se o atual preço da gasolina, a viabilidade econômica também seria possível em um sistema em que a inserção do gás de síntese reduzisse em, pelo menos, 64,5\% o consumo de gasolina no motor, passando de 0,814L/h para 0,289L/h. Neste caso, o custo mensal em bandeira verde não se alteraria, e haveria uma redução de 12,36\% em bandeira vermelha, como pode ser visto na tabela \ref{custos_reducao_gasolina}.
+Para que o sistema de gaseificação se torne viável economicamente, o preço por litro da gasolina deve ser, no máximo, R\$ 3/L em bandeira verde e R\$ 4,27/L em bandeira vermelha. Mantendo-se o atual preço da gasolina, a viabilidade econômica também seria possível em um sistema em que a inserção do gás de síntese reduzisse em, pelo menos, 64,5\% o consumo de gasolina no motor, passando de 0,814L/h para 0,289L/h. Neste caso, o custo mensal em bandeira verde não se alteraria, e haveria uma redução de 12,36\% em bandeira vermelha, como pode ser visto na tabela \ref{custos_reducao_gasolina}. Em um cenário em que o motor trabalhasse apenas com o gás de síntese, a redução na conta de energia elétrica da pastelaria seria de 15,5\%.
 
 \begin{table}[h]
 	\centering
@@ -280,22 +284,26 @@ Para que o sistema de gaseificação se torne viável economicamente, o preço p
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
 		\hline
-		Energia elétrica consumida & Tarifa Bandeira Verde & Custo Mensal & Custo Mensal\\
-		sem sistema de gaseificação & & Bandeira Verde & Total\\
-		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh &  R\$ 651,90 & \cellcolor{lightgray} R\$ 651,90 \\
+		Energia elétrica consumida & \multicolumn{2}{c|}{Bandeira Verde} & Custo Mensal\\
 		\cline{2-3}
-		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
-		& & Bandeira Vermelha & Total\\
+		sem sistema de gaseificação & Tarifa & Custo Mensal & Total\\
+		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh &  R\$ 651,90 & \cellcolor{lightgray} R\$ 651,90 \\
+		\cline{2-4}
+		& \multicolumn{2}{c|}{Bandeira Vermelha} & Custo Mensal\\
+		\cline{2-3}
+		& Tarifa  & Custo Mensal & Total\\
 		& R\$ 0,75/kWh &  R\$ 922,50 & \cellcolor{lightgray} R\$ 922,50 \\
 		\hline
-		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\rowcolor{gray} \multicolumn{4}{c}{} \\
 		\hline
-		Energia elétrica consumida & Tarifa bandeira verde & Custo Mensal & Custo Mensal \\
-		com sistema de gaseificação & & Bandeira Verde & Total\\
+		Energia elétrica consumida & \multicolumn{2}{c|}{Bandeira Verde}  & Custo Mensal \\
+		\cline{2-3}
+		com sistema de gaseificação & Tarifa  & Custo Mensal & Total\\
 		\multirow{4}{*}{712 kWh/mês} & R\$ 0,53/kWh & R\$ 377,22 & \cellcolor{lightgray} R\$ 651,89\\
 		\cline{2-4}
-		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
-		& & Bandeira Vermelha &  Total \\
+		& \multicolumn{2}{c|}{Bandeira Vermelha} & Custo Mensal\\
+		\cline{2-3}
+		& Tarifa  & Custo Mensal &  Total \\
 		& R\$ 0,75/kWh & R\$ 533,804 & \cellcolor{lightgray}R\$ 808,5\\
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
@@ -303,3 +311,6 @@ Para que o sistema de gaseificação se torne viável economicamente, o preço p
 	\end{tabular}
 	\label{custos_reducao_gasolina}
 \end{table}	
+
+Para um usuário que não tenha acesso à rede de distribuição de energia e deseje acoplar ao sistema de gaseificação apenas a fritadeira elétrica, a moenda de cana e o cilindro de massa, o sistema seria viável economicamente, tendo em vista que houve redução no consumo de gasolina e, portanto, também haverá redução de 14,7\% no custo mensal.
+
