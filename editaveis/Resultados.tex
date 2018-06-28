@@ -98,7 +98,7 @@ A tabela \ref{tabela_resultados_2} mostra o resultado dos cálculos realizados c
 		
 		Taxa específica de processamento do reator & $\psi$ & 105 kg/m\textsuperscript{2}h & Eq. \ref{taxa_reator}\\
 		
-		\rowcolor{lightgray} Poder Calorífico do syngas & PCI\textsubscript{gas} & 5,07 MJ/Nm\textsuperscript{3} & Eq. \ref{PCI_Tiangco}\\
+		\rowcolor{lightgray} Poder Calorífico do syngas & PCI\textsubscript{syngas} & 5,07 MJ/Nm\textsuperscript{3} & Eq. \ref{PCI_Tiangco}\\
 		
 		Vazão volumétrica do bagaço & $\dot{Q}$\textsubscript{bagaço} & 0,024m\textsuperscript{3}/h & Eq. \ref{qdot_bagaco}\\
 		
@@ -155,7 +155,7 @@ Na tabela \ref{tabela_moendas}, seguem as especificações de diferentes modelos
 
 Para esses modelos de moenda, seria necessário um motor a combustão com potência de eixo mínima de 3,5cv. Portanto, qualquer motor a combustão necessitaria trabalhar a duplo combustível para suprir a demanda de potência de tais moendas, uma vez que a energia do gás de síntese sozinho não é capaz de fornecer potência suficiente.
 
-Um gerador acoplado ao motor seria capaz de suprir a demanda de potência de motores elétricos de sete das onze moendas da tabela \ref{tabela_moendas}, as demais necessitariam também que o motor trabalhasse a duplo combustível. Para moendas pequenas que demandam potência do motor elétrico de 1/2 cv, seria necessário um moto-gerador com eficiência mínima de 23,5\%, para aqueles de 1cv, o mínimo seria de 47,2\%.
+Um gerador acoplado ao motor seria capaz de suprir a demanda de potência de motores elétricos de sete das onze moendas da tabela \ref{tabela_moendas}, as demais necessitariam também que o motor trabalhasse a duplo combustível. Para moendas pequenas que demandam potência do motor elétrico de 1/2 cv, seria necessário um moto-gerador com eficiência mínima de 23,5\%.
 
 A partir dos dados coletados, pôde-se calcular a potência de eixo que pode ser fornecida pelo motor a combustão utilizado neste experimento. Considerou-se para os cáluclos os dados de gasolina quando o motor estava operando a duplo combustível com topo fechado. Uma vez que não há dados suficientes para avaliar a potência que pode ser gerada com o gás de síntese que de fato entrou no motor, considerou-se, para o syngas, os resultados teóricos calculados e expostos na tabela \ref{tabela_resultados}. Na tabela \ref{tabela_potencia_motor_fiat}, vê-se o resultado da potência de eixo do motor com tais dados.
 
@@ -171,6 +171,7 @@ A partir dos dados coletados, pôde-se calcular a potência de eixo que pode ser
 		Vazão mássica de gasolina & 0,501 kg/h \\
 		Poder Calorífico Inferior gasolina & 43 MJ/kg \\
 		Potência térmica gasolina & 5,985 kW ou 8 cv\\
+		Potência térmica syngas & 1,724 kW ou 2,3 cv \\
 		Eficiência máxima de um MCI & 57\% \\
 		 Potência de eixo gasolina & 3,41 kW ou 4,6 cv \\
 		 Potência de eixo syngas & 982,68W ou 1,3 cv \\
@@ -212,25 +213,24 @@ Fez-se levantamento de dados de uma pastelaria situada no setor central da cidad
 	\label{dados_pastelaria}
 \end{table}	
 
-Segundo site da ANP, o preço da gasolina para o estado do Distrito Federal no mês de junho é de R\$ 4,40, como pode ser visto no Anexo III. Segundo a CEB, a tarifa de energia para o grupo A referente aos consumidores comerciais em bandeiras verde e vermelha são, R\$ 0,53/kWh e R\$ 0,75/kWh, respectivamente, como pode ser visto nos Anexos I e II. Portanto, os custos mensais da pastelaria com energia elétrica antes e após a inserção do sistema de gaseificação proposto podem ser vistos na tabela \ref{custos_finais}.
+Segundo site da ANP, o preço da gasolina para o estado do Distrito Federal no mês de junho é de R\$ 4,40 \cite{anp}. Segundo a CEB, a tarifa de energia para o grupo A referente aos consumidores comerciais em bandeiras verde e vermelha são, R\$ 0,53/kWh e R\$ 0,75/kWh, respectivamente \cite{ceb}. Portanto, os custos mensais da pastelaria com energia elétrica antes e após a inserção do sistema de gaseificação proposto podem ser vistos na tabela \ref{custos_finais}.
 
 A energia elétrica mensal produzida pelo sistema de gaseificação proposto é de 854kWh/mês, segundo cálculo resultante da equação abaixo.
 
-\begin{equation}
-Energia produzida = Potência de eixo total * \eta\textsubscript{g} * horas mensais
-\end{equation}
-
-
-\begin{equation}
-Ep = 4,39kW * 0,9 * 216h/mês = 854kWh/mês
-\end{equation}
-
+\begin{center}
+	Energia produzida = Potência de eixo total * $\eta$\textsubscript{g} * horas mensais
+	
+	Energia produzida = 4,39kW * 0,9 * 216h/mês
+	
+	Energia produzida = 854kWh/mês
+	
+\end{center}
 
 
 
 \begin{table}[h]
 	\centering
-	\caption{Custos de energia elétrica}
+	\caption{Custos de energia com e sem o sistema de gaseificação.}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		Consumo de gasolina mensal & Preço da gasolina & Custo mensal &\\
@@ -239,23 +239,23 @@ Ep = 4,39kW * 0,9 * 216h/mês = 854kWh/mês
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
 		\hline
-		Energia elétrica consumida & Tarifa Bandeira Verde & Custo Mensal & \\
-		sem sistema de gaseificação & & Bandeira Verde & \\
-		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh & R\$ 651,90 & \\
+		Energia elétrica consumida & Tarifa Bandeira Verde & Custo Mensal & Custo Mensal\\
+		sem sistema de gaseificação & & Bandeira Verde & Total\\
+		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh &  R\$ 651,90 & \cellcolor{lightgray} R\$ 651,90 \\
 		\cline{2-3}
-		& Tarifa Bandeira Vermelha & Custo Mensal & \\
-		& & Bandeira Vermelha & \\
-		& R\$ 0,75/kWh & R\$ 922,50 & \\
+		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
+		& & Bandeira Vermelha & Total\\
+		& R\$ 0,75/kWh &  R\$ 922,50 & \cellcolor{lightgray} R\$ 922,50 \\
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
 		\hline
 		Energia elétrica consumida & Tarifa bandeira verde & Custo Mensal & Custo Mensal \\
 		com sistema de gaseificação & & Bandeira Verde & Total\\
-		\multirow{4}{*}{376 kWh/mês} & R\$ 0,53/kWh & R\$ 199,28 & R\$ 859,28\\
+		\multirow{4}{*}{376 kWh/mês} & R\$ 0,53/kWh & R\$ 199,28 & \cellcolor{lightgray} R\$ 859,28\\
 		\cline{2-4}
 		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
 		& & Bandeira Vermelha &  Total \\
-		& R\$ 0,75/kWh & R\$ 282,00 & R\$ 942,00\\
+		& R\$ 0,75/kWh & R\$ 282,00 & \cellcolor{lightgray}R\$ 942,00\\
 		\hline
 		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
 		\hline
@@ -263,6 +263,43 @@ Ep = 4,39kW * 0,9 * 216h/mês = 854kWh/mês
 	\label{custos_finais}
 \end{table}	
 
-O custo mensal total de energia elétrica consumida com sistema de gaseificação é a soma do custo da energia elétrica distribuída pela CEB mais o custo mensal da gasolina utilizada no motor a combustão.
+O custo mensal total de energia elétrica consumida com sistema de gaseificação é a soma do custo da energia elétrica mais o custo mensal da gasolina utilizada no motor a combustão.
 
-Percebe-se que, ao introduzir o sistema de gaseificação, o custo mensal aumenta 24,1\% em bandeira verde e 2,97\% em bandeira vermelha. Este aumento se deve ao alto preço por litro da gasolina. O sistema de gaseificação somente seria viável economicamente se o preço por litro da gasolina for de no máximo R\$ 3/L, em bandeira verde, e no máximo de R\$ 4,27/L, em bandeira vermelha.
+Ao introduzir o sistema de gaseificação, o custo mensal aumenta 24,1\% em bandeira verde e 2,97\% em bandeira vermelha. Este aumento se deve ao alto preço por litro da gasolina, uma vez que esta fonte energética está sendo responsável por 76,8\% do custo total mensal em bandeira verde e 70\% em bandeira vermelha.
+
+Para que o sistema de gaseificação se torne viável economicamente, o preço por litro da gasolina deve ser, no máximo, R\$ 3/L em bandeira verde e R\$ 4,27/L em bandeira vermelha. Mantendo-se o atual preço da gasolina, a viabilidade econômica também seria possível em um sistema em que a inserção do gás de síntese reduzisse em, pelo menos, 64,5\% o consumo de gasolina no motor, passando de 0,814L/h para 0,289L/h. Neste caso, o custo mensal em bandeira verde não se alteraria, e haveria uma redução de 12,36\% em bandeira vermelha, como pode ser visto na tabela \ref{custos_reducao_gasolina}.
+
+\begin{table}[h]
+	\centering
+	\caption{Custos de energia com redução no consumo de gasolina.}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Consumo de gasolina mensal & Preço da gasolina & Custo mensal &\\
+		& & da gasolina & \\
+		62,4L/mês & R\$ 4,40/L & R\$ 274,67 &\\
+		\hline
+		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\hline
+		Energia elétrica consumida & Tarifa Bandeira Verde & Custo Mensal & Custo Mensal\\
+		sem sistema de gaseificação & & Bandeira Verde & Total\\
+		\multirow{4}{*}{1230 kWh/mês} & R\$ 0,53/kWh &  R\$ 651,90 & \cellcolor{lightgray} R\$ 651,90 \\
+		\cline{2-3}
+		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
+		& & Bandeira Vermelha & Total\\
+		& R\$ 0,75/kWh &  R\$ 922,50 & \cellcolor{lightgray} R\$ 922,50 \\
+		\hline
+		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\hline
+		Energia elétrica consumida & Tarifa bandeira verde & Custo Mensal & Custo Mensal \\
+		com sistema de gaseificação & & Bandeira Verde & Total\\
+		\multirow{4}{*}{712 kWh/mês} & R\$ 0,53/kWh & R\$ 377,22 & \cellcolor{lightgray} R\$ 651,89\\
+		\cline{2-4}
+		& Tarifa Bandeira Vermelha & Custo Mensal & Custo Mensal\\
+		& & Bandeira Vermelha &  Total \\
+		& R\$ 0,75/kWh & R\$ 533,804 & \cellcolor{lightgray}R\$ 808,5\\
+		\hline
+		\rowcolor{gray} \multicolumn{4}{|c|}{} \\
+		\hline
+	\end{tabular}
+	\label{custos_reducao_gasolina}
+\end{table}	

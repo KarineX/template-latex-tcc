@@ -1,6 +1,6 @@
 \chapter[Materiais e métodos]{Materiais e Métodos}
 
-A análise do sistema foi feita de forma quantitativa por meio de estudo experimental, em que foi realizada a montagem de um aparato experimental e a coleta de dados deste experimento visando analisar o consumo do motor com três diferentes configurações, sendo elas: motor operando somente com gasolina, motor acoplado a um gaseificador operando a topo aberto e a topo fechado, bem como a análise energética do sistema dada pela energia térmica do gás de síntese que pode ser convertida em trabalho de eixo ou energia elétrica, incluindo o levantamento de dados em campo.
+A análise do sistema foi feita de forma quantitativa por meio de estudo experimental, em que foi realizada a montagem de um aparato experimental e a coleta de dados deste experimento visando analisar o consumo do motor com três diferentes configurações, sendo elas: motor operando somente com gasolina, motor acoplado a um gaseificador operando a topo aberto e a topo fechado, bem como a análise energética do sistema dada pela energia térmica do gás de síntese que pode ser convertida em trabalho de eixo ou energia elétrica.
 
 \section{Aparato experimental}
 Para a alimentação do motor com o gás de síntese proveniente da gaseificação do bagaço de cana, foi montado um aparato experimental composto por um reator, um sistema de resfriamento dos gases e um motor de combustão interna na configuração do gaseificador a topo aberto. A topo fechado, foi adicionado ao aparato um compressor a montante do reator.
@@ -57,7 +57,7 @@ Para preparar a biomassa para o experimento de gaseificação, cortou-se o baga�
 	\label{bagaco_cortado}
 \end{figure}
 
-O experimento iniciou com a coleta de dados do motor funcionando apenas com gasolina através do software **. Foram coletados dados da rotação do motor, o tempo de injeção, a posição da borboleta e a pressão do coletor, dentre outros dados fornecidos pelo software.
+O experimento iniciou com a coleta de dados do motor funcionando apenas com gasolina através do software PC-SCAN 3000 USB. Foram coletados dados da rotação do motor, o tempo de injeção, a posição da borboleta e a pressão do coletor, dentre outros dados fornecidos pelo software.
 
 Após coletados esses dados, deu-se ínio ao processo de gaseificação no reator com a adição, primeiramente, de carvão para dar ignição até que se atingisse a temperatura de gaseificação e entrasse em regime permanente.
 A partir de então, adicionavam-se 100 gramas de bagaço de cana medindo a altura da coluna no reator ocupada por ele e o tempo levado até que todo o bagaço inserido fosse consumido e transformado em gás de síntese. A alimentação do bagaço de cana foi realizada manualmente pelo topo do reator e foi feita até que fossem coletados os dados do motor operando a duplo combustível.
@@ -73,7 +73,7 @@ O cálculo do consumo de combustível do motor pode ser feito pela equação \re
 \end{equation}
 
 Onde C é o consumo,
-$\dot{Q}$ é a vazão volumétrica do bico de injeção do motor,
+$\dot{Q}$ é a vazão volumétrica do bico de injeção do motor, que tem o valor de 169mL/min,
 t\textsubscript{i} é o tempo de injeção e
 N é a rotação do motor.
 
@@ -105,7 +105,7 @@ t é o tempo de consumo da biomassa.
 
 \subsection{Vazão do gás de síntese}
 
-Para determinação da vazão do gás de síntese, faz-se um balanço de energia, de acordo com a equação \ref{balanco_massa}.
+Para determinação da vazão do gás de síntese, faz-se um balanço de massa, de acordo com a equação \ref{balanco_massa}.
 
 \begin{equation}\label{balanco_massa}
 	\dot{Q}\textsubscript{bagaço} + \dot{Q}\textsubscript{ar} = \dot{Q}\textsubscript{syngas}\qquad [m^3/h]
@@ -117,23 +117,11 @@ onde $\dot{Q}$\textsubscript{bagaço} pode ser dado pela vazão mássica do baga
 	\dot{Q}\textsubscript{bagaço} = \dot{m}\textsubscript{bagaço} * \rho\textsubscript{ap} \qquad [m^3/h]
 \end{equation}
 
-\subsection{Vazão mássica do bagaço de cana}
 
-A vazão mássica do bagaço é determinada pela massa de biomassa inserida pelo tempo que foi consumida e pode ser calculada pela equação \ref{vazao_bagaco}.
-
-\begin{equation} \label{vazao_bagaco}
-\dot{m}\textsubscript{bagaço} = \frac{m\textsubscript{bagaço}}{t} \qquad [m/s]
-\end{equation}
 
 \subsection{Potência térmica}
 
-A potência do gás pode ser calculado pela equação \ref{consumo energetico}, que será caluclada com o PCI da metodologia de Tiangco.
-
-\begin{equation} \label{consumo_energetico}
-\dot{E} = \dot{Q} * PCI   \quad\quad  [J/s]
-\end{equation}
-
-Portanto, a equação \ref{potencia_termica} dá a potência térmica do gás de síntese do bagaço, que pode ser transformado em trabalho de eixo.
+A potência térmica do gás pode ser calculado pela equação \ref{potencia_termica}. Quando inserido o gás no motor, tal potência é transformada em trabalho de eixo.
 
 \begin{equation} \label{potencia_termica}
 P\textsubscript{t} = \dot{Q}\textsubscript{syngas} * PCI\textsubscript{syngas} \quad\quad  [W]
@@ -156,7 +144,7 @@ Para um moto-gerador, além das eficiências supracitadas, consideram-se as perd
 
 \subsection{Potência de eixo e Potência elétrica}
 
-A eficiência da conversão energética de uma máquina pode ser dada pela razão da potência ou energia que foi gerada sobre a potência ou energia de entrada. Portanto, para um motor e um moto-gerador, as potência de eixo e elétrica podem ser calculadas pelas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, respectivamente \cite{brunetti2012}.
+A eficiência da conversão energética de uma máquina pode ser dada pela razão da potência ou energia que foi gerada sobre a potência ou energia de entrada. Portanto, para um motor e um moto-gerador, as potência de eixo e elétrica, que são as potências geradas, podem ser calculadas pelas equações \ref{potencia_eixo} e \ref{potencia_eletrica}, respectivamente \cite{brunetti2012}.
 
 \begin{equation} \label{potencia_eixo}
 P\textsubscript{w} = P\textsubscript{t} * \eta\textsubscript{motor} \qquad [W]
